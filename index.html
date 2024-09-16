@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katre | JavaScript'i Udemy kursus 1</title>
+
+    <style>
+
+        body {background-color: #333333; color: #f0f0f0;}
+        
+        #sendItem {
+            background-color: #6e3a5d;
+            width: 200px;
+            border-radius:8px;
+            margin: 24px;
+            padding: 24px;
+            font-size: 20px;
+            transition: 3s all;
+            left: 0;
+        }
+
+        #submit, #password {
+            padding:8px 16px;
+        }
+
+        #password {
+            font-size:18px;
+            width:80%;
+        }
+
+        .leftTrans {
+            left: 3000px !important;
+            position: absolute;
+        }
+        
+    </style>
+
+    <script src=script.js type="text/javascript"></script>
+
+</head>
+<body>
+
+    <h1>Let's make a deal!</h1>
+    <input type="button" value="Curtain 1" onclick="ShowCurtain(1, 'midagi lahedat')" />
+    <input type="button" value="Curtain 2" onclick="ShowCurtain(2, 'midagi magusat')" />
+    <input type="button" value="Curtain 3" onclick="ShowCurtain(3, 'midagi huvitavat')" />
+
+    <h2>The Vending Pending Machine!</h2>
+    <input type="button" value="1" onclick="VendingPendingMachine('1')"/>
+    <input type="button" value="2" onclick="VendingPendingMachine('2')"/>
+    <input type="button" value="3" onclick="VendingPendingMachine('3')"/>
+    <input type="button" value="4" onclick="VendingPendingMachine('4')"/>
+
+    <br/><br/><br/>
+
+    <div id="sendItem">
+    
+        <form>
+            Enter password: <br/>
+            <br/>
+            <input type="password" id="password" placeholder="••••••••" />
+            <br/>
+            <br/>
+            <input type="button" id="submit" value="Login" onclick="CheckValidation()"/>
+        </form>
+
+    </div>
+
+</body>
+</html>
